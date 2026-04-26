@@ -7,10 +7,9 @@ export default function KStandard() {
         paddingBottom: 'clamp(5rem, 9vw, 8rem)',
       }}
     >
-      {/* MMA / BJJ row — on desktop it flanks the mascot tail bleeding from the hero;
-          on mobile it sits BELOW where the mascot lands so it doesn't overlap. */}
-      <div className="container-x relative pt-[9.5rem] md:pt-8">
-        <div className="flex items-center justify-between gap-4 md:gap-6 lg:gap-10">
+      {/* MMA / BJJ row flanks the mascot tail bleeding in from the hero above */}
+      <div className="container-x relative pt-8">
+        <div className="flex items-center justify-between gap-6 lg:gap-10">
           <span
             className="kstd-word-l font-display text-k2 leading-[0.9] uppercase tracking-[-0.01em] text-[clamp(2.4rem,7.4vw,6.5rem)] drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
             aria-hidden="true"
