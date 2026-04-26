@@ -25,7 +25,7 @@ export default function KStandard() {
         </div>
       </div>
 
-      <div className="container-x pt-10 md:pt-[clamp(7rem,22vw,18rem)]">
+      <div className="container-x" style={{ paddingTop: 'clamp(7rem, 22vw, 18rem)' }}>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="lg:col-span-5 fx-left">
             <span className="eyebrow text-bone/55">About K2</span>
