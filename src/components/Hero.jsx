@@ -11,20 +11,6 @@ export default function Hero() {
         duration: 2.0,
         ease: 'expo.out',
       })
-      gsap.from('.hero-word-l', {
-        x: -120,
-        opacity: 0,
-        duration: 1.1,
-        delay: 0.25,
-        ease: 'expo.out',
-      })
-      gsap.from('.hero-word-r', {
-        x: 120,
-        opacity: 0,
-        duration: 1.1,
-        delay: 0.25,
-        ease: 'expo.out',
-      })
       gsap.from('.hero-mascot', {
         y: 80,
         scale: 0.85,
@@ -74,21 +60,7 @@ export default function Hero() {
 
         <div className="container-x relative z-10 h-full min-h-[46svh] md:min-h-[51svh] flex flex-col justify-between pt-24 md:pt-28 pb-6 md:pb-8">
           <h1 className="sr-only">K2 Mixed Martial Arts and Brazilian Jiu Jitsu</h1>
-
-          <div className="flex-1 flex items-center justify-between gap-3 md:gap-6 lg:gap-10">
-            <span
-              className="hero-word-l font-display text-k2 leading-[0.9] uppercase tracking-[-0.01em] text-[clamp(2.4rem,7.4vw,6.5rem)] drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
-              aria-hidden="true"
-            >
-              MMA
-            </span>
-            <span
-              className="hero-word-r font-display text-k2 leading-[0.9] uppercase tracking-[-0.01em] text-[clamp(2.4rem,7.4vw,6.5rem)] drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
-              aria-hidden="true"
-            >
-              BJJ
-            </span>
-          </div>
+          <div className="flex-1" />
 
           <div className="hero-bottom flex items-end justify-between gap-4">
             <a

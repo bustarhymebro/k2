@@ -4,12 +4,31 @@ export default function KStandard() {
       id="about"
       className="relative bg-ink text-bone border-t border-wire overflow-hidden"
       style={{
-        // Reserve room for the hero mascot to land into this section
-        paddingTop: 'clamp(14rem, 32vw, 26rem)',
         paddingBottom: 'clamp(5rem, 9vw, 8rem)',
       }}
     >
-      <div className="container-x">
+      {/* MMA / BJJ row that flanks the mascot tail bleeding in from the hero above */}
+      <div className="container-x relative pt-6 md:pt-8">
+        <div className="flex items-center justify-between gap-3 md:gap-6 lg:gap-10">
+          <span
+            className="kstd-word-l font-display text-k2 leading-[0.9] uppercase tracking-[-0.01em] text-[clamp(2.4rem,7.4vw,6.5rem)] drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
+            aria-hidden="true"
+          >
+            MMA
+          </span>
+          <span
+            className="kstd-word-r font-display text-k2 leading-[0.9] uppercase tracking-[-0.01em] text-[clamp(2.4rem,7.4vw,6.5rem)] drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
+            aria-hidden="true"
+          >
+            BJJ
+          </span>
+        </div>
+      </div>
+
+      <div
+        className="container-x"
+        style={{ paddingTop: 'clamp(7rem, 22vw, 18rem)' }}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div className="lg:col-span-5 fx-left">
             <span className="eyebrow text-bone/55">About K2</span>
